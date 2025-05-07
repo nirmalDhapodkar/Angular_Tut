@@ -1,13 +1,21 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
+
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Nirmal Dhapodkar';
-  name='Storm Valet';
+
+  handleClickEvent(){
+    alert('Function Called');
+    this.otherFunction();
+  }
+
+  otherFunction(){
+    console.log('Hello');
+  }
 }
