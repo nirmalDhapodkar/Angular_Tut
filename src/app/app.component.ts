@@ -10,12 +10,18 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
 
-  handleClickEvent(){
-    alert('Function Called');
-    this.otherFunction();
+  count: number = 0;
+
+  handleIncrement() {
+    this.count++;
   }
 
-  otherFunction(){
-    console.log('Hello');
+  handleDecrement() {
+    this.count && this.count--;
   }
+
+  handleReset() {
+    this.count = 0;
+  }
+
 }
