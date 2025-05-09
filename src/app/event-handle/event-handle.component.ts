@@ -8,9 +8,29 @@ import { Component } from '@angular/core';
 })
 export class EventHandleComponent {
 
-  handleEvent(event:Event){
-    console.log("Event called", event.type);
-    console.log("value", (event.target as HTMLInputElement).value);
+  buttonClickEvent = "";
+  enter="";
+  input="";
+  focus = "";
+
+  handleButtonClick(event:MouseEvent){
+    const target = event.target as HTMLButtonElement;
+    this.buttonClickEvent = `The Button named ${target.name} Clicked`;
   }
 
+  handleEnter(event:MouseEvent){
+    this.enter="You Entered Area";
+  }
+  handleLeave(event:MouseEvent){
+    this.enter="You Leaved Area";
+  }
+
+  handleInput(event:Event){
+    const target = event.target as HTMLInputElement;
+    this.input = target.value;
+  }
+
+  handleFocus(event:Event){
+    this.focus = event.type;
+  }
 }

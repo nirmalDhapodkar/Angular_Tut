@@ -58,6 +58,12 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
 
-## Implementation 1
+## Couter App
 Created Counter App
 ![Counter App Image](<Screenshot from 2025-05-07 07-14-14.png>)
+
+## Event Handling
+Tested  for event handling
+![Event handling Image](<Screenshot from 2025-05-09 20-06-00.png>)
+
+

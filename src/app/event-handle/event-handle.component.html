@@ -1,23 +1,30 @@
-
 <h1>Events in Angular!</h1>
 
-<button class="btn" name="login" (click)="handleEvent($event)">clickMe</button>
-
-<br>
-<br>
-
-<div 
-(mouseenter)="handleEvent($event)"
-style="background-color: green; width: 100px; height: 100px;">
+<div class="box">
+    <div class="inner-box">
+<button class="btn" name="Login" (click)="handleButtonClick($event)">Login</button>
+<h2>{{buttonClickEvent?buttonClickEvent:'ClickMe'}}</h2>
 </div>
-<div 
-(mouseleave)="handleEvent($event)"
-style="background-color: blue; width: 100px; height: 100px;">
 </div>
 
 <br>
+
+
+<div class="box">
+<div>
+    <div (mouseenter)="handleEnter($event)" (mouseleave)="handleLeave($event)" class="area">
+        {{enter?enter:'Enter Area'}}
+    </div>
+</div>
+</div>
+
 <br>
-<input type="text" name="user" (input)="handleEvent($event)"
-(focus)="handleEvent($event)"
-(blur)="handleEvent($event)"
->
+
+<div class="box">
+    <div>
+<input type="text" name="user" 
+(input)="handleInput($event)" (focus)="handleFocus($event)" (blur)="handleFocus($event)">
+<h2 style="min-height: 1.2em;">{{input}}</h2>
+<h3 style="min-height: 1em;">{{focus}}</h3>
+</div>
+</div>
