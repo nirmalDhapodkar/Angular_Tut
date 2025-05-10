@@ -67,3 +67,8 @@ Tested  for event handling
 ![Event handling Image](<Screenshot from 2025-05-09 20-06-00.png>)
 
 
+## Used if-else statement
+Made color canger using if else statement
+![If else statement](image.png)
+
+
