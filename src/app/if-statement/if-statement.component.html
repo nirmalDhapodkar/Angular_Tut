@@ -1,0 +1,41 @@
+<h1>If Else statement</h1>
+
+<div class="box">
+<div>
+@if(display==='Green'){
+    <div style="width:400px; height: 400px; background-color: rgb(118, 207, 118); " >
+    </div>
+}
+@else if(display==='Blue'){
+    <div style="width:400px; height: 400px; background-color: rgb(95, 189, 218);">
+    </div>
+}
+@else if(display==='Red'){
+    <div style="width:400px; height: 400px; background-color: rgb(230, 96, 73);">
+    </div>
+}
+@else if(display==='Gold'){
+    <div style="width:400px; height: 400px; background-color: rgb(231, 215, 72);">
+    </div>
+}
+@else {
+    <div style="width:400px; height: 400px; background-color: rgb(162, 81, 228);">
+    </div>
+}
+
+<br>
+<button (click)="change(false)" style=" background-color: aquamarine; border-radius: 20px;
+font-size: 30px;
+padding: 15px;
+font-weight: 600;
+min-width: 130px;
+">{{'<'}}</button>
+<button (click)="change(true)" style="background-color: aquamarine; border-radius: 20px;
+font-size: 30px;
+padding: 15px;
+font-weight: 600;
+min-width: 130px;
+float: right;
+">{{'>'}}</button>
+</div>
+</div>
