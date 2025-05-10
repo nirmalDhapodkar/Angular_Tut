@@ -1,0 +1,28 @@
+<header style="color:white; height:6em; width: 100vw; 
+    background-color: rgb(84, 224, 166);
+">
+    <h1>Valet Created This</h1>
+    <nav>
+        <button class="tab" (click)="changeTab('One')">One</button>
+        <button class="tab" (click)="changeTab('Two')">Two</button>
+        <button class="tab" (click)="changeTab('Three')">Three</button>
+        <button class="tab" (click)="changeTab('Four')">Four</button>
+    </nav>
+    
+</header>
+<div style="min-height: calc(100vh-5em); width: 100%; padding: 15px;">
+    @switch (tab) {
+        @case ('One') {
+            <app-counter></app-counter>
+        }
+        @case ('Two') {
+            <app-event-handle></app-event-handle>
+        }
+        @case ('Three') {
+            <app-get-set-input></app-get-set-input>
+        }
+        @case ('Four') {
+            <app-if-statement></app-if-statement>
+        }
+    }
+</div>

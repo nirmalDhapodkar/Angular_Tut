@@ -1,0 +1,18 @@
+.tab{
+    background-color: rgb(74, 196, 145);
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    color: white;
+    min-width: 80px;
+    font-weight: 600;
+}
+.tab:hover{
+    background-color: rgb(65, 173, 177);
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-height:40px;
+    font-size: 3em;
+}

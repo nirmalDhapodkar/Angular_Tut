@@ -63,12 +63,16 @@ Created Counter App
 ![Counter App Image](<Screenshot from 2025-05-07 07-14-14.png>)
 
 ## Event Handling
-Tested  for event handling
+Tested for event handling
 ![Event handling Image](<Screenshot from 2025-05-09 20-06-00.png>)
 
 
 ## Used if-else statement
-Made color canger using if else statement
+Made color changer using if else statement
 ![If else statement](image.png)
 
+
+## Used switch statement to create tabs
+Made tabs using my previous apps anf switch statements
+![Gif Of Demo](cinnamon-2025-05-10T2200170530-ezgif.com-video-to-gif-converter.gif)
 
