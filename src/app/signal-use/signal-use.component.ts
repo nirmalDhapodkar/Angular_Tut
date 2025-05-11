@@ -1,4 +1,4 @@
-import { Component, effect, signal } from '@angular/core';
+import { Component, computed, effect, Signal, signal, WritableSignal } from '@angular/core';
 
 @Component({
   selector: 'app-signal-use',
@@ -7,16 +7,19 @@ import { Component, effect, signal } from '@angular/core';
   styleUrl: './signal-use.component.css'
 })
 export class SignalUseComponent {
-  count =  signal(10);
-  x = 20;
-
-  constructor(){
-    effect(()=>{
-      console.log(this.count())
-    })
-  }
+  data : WritableSignal<number|string> = signal(10);
+  count:Signal<number> = computed(()=>200);
 
   update(){
-    this.count.set(this.count()+30);
+    this.data.set("Hello");
+  }
+
+  // computed signal
+  x = signal(10);
+  y = signal(20);
+  z = computed(()=>this.x()+this.y());
+
+  updateX(){
+    this.x.set(this.x()+10);
   }
 }
