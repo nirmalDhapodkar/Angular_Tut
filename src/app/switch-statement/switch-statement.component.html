@@ -7,6 +7,8 @@
         <button class="tab" (click)="changeTab('Two')">Two</button>
         <button class="tab" (click)="changeTab('Three')">Three</button>
         <button class="tab" (click)="changeTab('Four')">Four</button>
+        <button class="tab" (click)="changeTab('Five')">Five</button>
+        <button class="tab" (click)="changeTab('Six')">Six</button>
     </nav>
     
 </header>
@@ -23,6 +25,12 @@
         }
         @case ('Four') {
             <app-if-statement></app-if-statement>
+        }
+        @case ('Five') {
+            <app-for-statement></app-for-statement>
+        }
+        @case ('Six') {
+            <app-signal-use></app-signal-use>
         }
     }
 </div>

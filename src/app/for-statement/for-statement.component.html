@@ -1,0 +1,16 @@
+<h1>For Statement List</h1>
+
+<ol>
+@for(item of basket; track basket){
+    <li>{{item}}</li>
+}
+</ol>
+
+<hr>
+@for(employee of employees; track employee; let id = $index){
+    <span>{{id}}</span>
+    <h3>Name: {{employee.name}}</h3>
+    <h5>MobNo: {{employee.MobNo}}</h5>
+    <h5>Email: {{employee.email}}</h5>
+    <hr>
+}
